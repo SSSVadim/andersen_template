@@ -1,0 +1,30 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+// @import "fonts";
+
+/*<GRID>*/
+@import "template-parts/grid.scss";
+
+/*<RESET STYLES>*/
+@import "template-parts/reset.scss";
+
+/*<UI>*/
+@import "template-parts/common-classes.scss"; //ok
+
+/*<PAGES>*/
+@import "sections/header/header.scss"; //ok
+@import "sections/footer/footer.scss"; //ok
+@import "sections/info.scss"; //ok
+@import "sections/favorites.scss"; //ok
+@import "sections/card-info.scss"; //ok
+@import "sections/auth.scss"; //ok
+@import "sections/register.scss"; //ok
+@import "sections/search-history.scss"; //ok

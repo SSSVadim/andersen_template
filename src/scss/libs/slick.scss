@@ -1,0 +1,91 @@
+/* Слайдер */
+.slick-slider{
+	position: relative; /*чтобы спозиционировать стрелки*/
+	padding: 0px 60px; /*чтобы слайды не прилепали к краю*/
+	min-width: 0; /*если слайдер является флекс элементом или сам во флекс элементе*/
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden; /*чтобы скрыть слайды лишние*/
+}
+/* Лента слайдов */
+.slick-track{
+	@include flexbox(); /* чтобы элементы-картинки встали в ряд*/
+	align-items: flex-start; /*для adaptiveHeight*/
+}
+
+/*======================================================================*/
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/*======================================================================*/
+
+/* Стрелка */
+.slick-arrow{
+	position: absolute;
+	top: 50%;
+	@include tr(0px,-50%,0px);
+	z-index: 10;
+	font-size: 0;
+	width: 0px;
+	height: 0px;
+	
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	left: 0;
+	background: url('../img/icons/arrowleft_b.svg') 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	right: 0;
+	background: url('../img/icons/arrowright_b.svg') 0 0 / 100% no-repeat;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+/*======================================================================*/
+
+
+/* Точки (булиты) */
+.slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+/* Элемент точки */
+.slick-dots li button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+
+@media (max-width:767px){
+	
+}

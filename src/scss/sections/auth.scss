@@ -1,0 +1,40 @@
+.auth {
+  // .auth__form
+  &__form {
+  }
+  // .auth__field-wrapper
+  &__field-wrapper {
+  }
+}
+
+.auth-form {
+  max-width: 500px;
+  &__title-wrapper {
+  }
+  // .section-form__title
+  &__title {
+    font-size: 24px;
+    margin: 0px 0px 15px 0px;
+  }
+  // .section-form__buttons
+  &__buttons {
+  }
+  // .section-form__btn
+  &__btn {
+  }
+  // .auth-form__field-wrapper
+  &__field-wrapper {
+  }
+  // .auth-form__label
+  &__label {
+    display: block;
+    font-size: 18px;
+    margin: 0px 0px 7px 0px;
+  }
+  // .auth-form__input
+  &__input {
+    height: 30px;
+    padding: 0px 15px;
+    margin: 0px 0px 10px 0px;
+  }
+}

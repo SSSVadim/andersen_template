@@ -1,0 +1,115 @@
+
+/*<BREAKPOINTS>=======================================================================================*/
+$minwidth:320px;
+$container:1140;
+
+$lg:$container+90;		
+$md:999.98;		
+$sm:767.98;		
+$xs:374.98;		
+/*===============================================================================================*/
+
+
+
+/*<GRID>=======================================================================================*/
+$container_lg: 970;
+$container_md: 750;
+$container_sm: none;
+$container_xs: none;
+
+.vs-container{max-width:$container+px;margin: 0 auto;width: 100%; overflow: hidden;
+	@media screen and (max-width:$lg+px){max-width: $container_lg+px;}
+	@media screen and (max-width:$md+px){max-width: $container_md+px;}
+	@media screen and (max-width:$sm+px){max-width: $container_sm; padding:0 10px;}
+	@media screen and (max-width:$xs+px){max-width: $container_xs; padding:0 10px;}
+
+	&.vs-border{
+		border: 1px solid #000;
+	}
+}
+
+.vs-offset-container{
+	margin-left: calc( (100% - 1140px) / 2 ); overflow: hidden;
+	@media screen and (max-width:$lg+px){margin-left: calc( (100% - 970px) / 2 );}
+	@media screen and (max-width:$md+px){margin-left: calc( (100% - 750px) / 2 );}
+	@media screen and (max-width:$sm+px){max-width: $container_sm; padding:0 10px; width: 100%; margin: 0 auto;}
+	@media screen and (max-width:$xs+px){max-width: $container_xs; padding:0 10px;}	
+}
+/*===============================================================================================*/
+
+
+
+/*<BREAKPOINTS XL SIZE>=======================================================================================*/
+$minwidth:320px;
+$container:1440; /* КОНТЕЙНЕР */
+
+$xl:$container+90;   //md0
+$lg:1190;		//md1
+$md:999.98;		//md2
+$sm:767.98;		//md3
+$xs:374.98;		//md4
+/*===============================================================================================*/
+
+
+/*<GRID XL SIZE>=======================================================================================*/
+
+$container_xl: 1140;
+$container_lg: 970;
+$container_md: 750;
+$container_sm: none;
+$container_xs: none;
+
+
+
+.vs-container{max-width:$container+px;margin: 0 auto;width: 100%; overflow: hidden; // изначально без ограничения, выше xl 1530 (1440 + 90)
+	@media screen and (max-width:$xl+px){max-width: 1140px;}      // если становится меньше 1530
+	@media screen and (max-width:$lg+px){max-width: $container_lg+px;} // меньше 1190
+	@media screen and (max-width:$md+px){max-width: $container_md+px;} // меньше 1000
+	@media screen and (max-width:$sm+px){max-width: $container_sm; padding:0 10px;}  // меньше 768
+	@media screen and (max-width:$xs+px){max-width: $container_xs; padding:0 10px;}  // меньше 375
+
+	&.vs-border{
+		border: 1px solid #000;
+	}
+}
+
+.vs-offset-container{
+	margin-left: calc( (100% - 1440px) / 2 ); overflow: hidden;
+	@media screen and (max-width:$xl+px){margin-left: calc( (100% - 1140px) / 2 );}
+	@media screen and (max-width:$lg+px){margin-left: calc( (100% - 970px) / 2 );}
+	@media screen and (max-width:$md+px){margin-left: calc( (100% - 750px) / 2 );}
+	@media screen and (max-width:$sm+px){max-width: $container_sm; padding:0 10px; width: 100%; margin: 0 auto;}
+	@media screen and (max-width:$xs+px){max-width: $container_xs; padding:0 10px;}	
+}
+/*===============================================================================================*/
+
+.no-overflow{
+	overflow: visible;
+}
+
+
+
+/*<AUTO GRID SETTINGS>=======================================================================================*/
+
+$gutter: 30px;
+$gutter_tablet: 40px;
+$gutter_mobile: 50px;
+
+
+
+$gutter_half: ($gutter / 2);
+$gutter_half_tablet: ($gutter_tablet / 2);
+$gutter_half_mobile: ($gutter_mobile / 2);
+$m_1: 8.3333%;
+$m_2: 16.6666%;
+$m_3: 25%;
+$m_4: 33.3333%;
+$m_5: 41.6666%;
+$m_6: 50%;
+$m_7: 58.3333%;
+$m_8: 60.6666%;
+$m_9: 75%;
+$m_10: 83.3333%;
+$m_11: 91.6666%;
+$m_12: 100%;
+

@@ -1,0 +1,73 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.title {
+  font-size: 40px;
+  color: #fff;
+}
+
+.section {
+  padding: 80px 0px 0px 0px;
+}
+
+//<BUTTONS>====================================================================================================
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+
+  border-radius: 10px;
+  background-color: rgb(45, 13, 187);
+
+  font-size: 1.6rem;
+  color: #fff;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease 0s;
+
+  padding: 0px 20px;
+  margin: 0px 0px 20px 0px;
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      background-color: rgb(60, 73, 255);
+    }
+  }
+}
+
+.sec-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  border-radius: 10px;
+  background-color: rgb(255, 47, 20);
+
+  font-size: 1.6rem;
+  color: #fff;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+
+  // ie11fix
+  &:after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      background-color: rgb(207, 24, 0);
+    }
+  }
+}

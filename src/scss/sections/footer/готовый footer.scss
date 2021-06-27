@@ -1,0 +1,432 @@
+.footer {
+background-color: lightblue;
+	.container{
+		border-top: 1px solid #dfdfdf;
+		border-bottom: 1px solid #dfdfdf;
+		padding: 45px 0px 75px 0px;
+	}
+	&__about-block {}
+	&__menu-column {}
+}
+.container {
+}
+.footer-body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer-about {
+	max-width: 180px;
+	margin: 0px 10px 0px 0px;
+	&__title {
+		margin: 0px 0px 20px 0px;
+	}
+	&__text {
+		color: #7c7c7c;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 25px;
+		margin: 0px 0px 20px 0px;
+	}
+	&__icons {}
+}
+.footer__menu-wrapper{
+	flex: 0 1 auto;
+	width: 72%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer-menu {
+	
+	
+	&__title {
+		color: #494949;
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0px 0px 40px 0px;
+	}
+	&__list {
+		li{
+			margin: 0px 0px 11px 0px;
+		}
+	}
+	&__item {
+		color: #7c7c7c;
+		font-size: 14px;
+		font-weight: 500;
+
+		&:hover{
+			color: #333;
+		}
+	}
+}
+
+.footer {
+	&__social-wrapper {
+		display: flex;
+	}
+}
+.foooter {
+	&__social-item {
+		margin: 0px 10px 0px 0px;
+	}
+}
+.foooter-social {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	transition: 0.5s ease all;
+
+	&_f{
+		background-color:  #39579b;
+		border: 1px solid #39579b;
+
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&_g{
+		background-color:  #ce3f31;
+		border: 1px solid #ce3f31;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&_t{
+		background-color:  #1c9deb;
+		border: 1px solid #1c9deb;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&__icon {
+		color: white;
+		transition: 0.5s ease all;
+		&_facebook {
+					
+		}
+		&_google-plus {
+		}
+		&_twitter {
+		}
+	}
+}
+
+.foooter-social:hover .foooter-social__icon_facebook{
+	color: #39579b;
+}
+
+.foooter-social:hover .foooter-social__icon_google-plus{
+	color: #ce3f31;
+}
+
+.foooter-social:hover .foooter-social__icon_twitter{
+	color: #1c9deb;
+}
+
+
+
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+
+/* ========================== MDS1 ===============================   */
+@media (max-width:$md1+px){
+	
+
+} /* MDS1 */
+
+
+
+
+
+/* ========================== MDS2 ===============================   */
+@media (max-width:$md2+px){
+	
+} /* MDS2 */
+
+
+
+
+
+
+/* ========================== MDS3 ===============================   */
+@media (max-width:$md3+px){
+	.footer {
+	.container{
+		padding: 45px 10px 75px 10px;
+	}
+	&__about-block {}
+	&__menu-column {}
+}
+.container {
+}
+.footer-body {
+	display: flex;
+	flex-direction: column;
+}
+.footer-about {
+	max-width: none;
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+	&__title {
+		margin: 0px 0px 10px 0px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 25px;
+		margin: 0px 0px 10px 0px;
+	}
+	&__icons {}
+}
+.footer__menu-wrapper{
+	flex: 0 1 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.footer-menu {
+	flex: 0 1 auto;
+	
+	
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0px 0px 40px 0px;
+	}
+	&__list {
+		li{
+			margin: 0px 0px 11px 0px;
+		}
+	}
+	&__item {
+		font-size: 14px;
+		font-weight: 500;
+
+		&:hover{
+			color: #333;
+		}
+	}
+}
+
+.footer {
+	&__social-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+.foooter {
+	&__social-item {
+		margin: 0px 20px 0px 0px;
+	}
+}
+.foooter-social {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	transition: 0.5s ease all;
+
+	&_f{
+		background-color:  #39579b;
+		border: 1px solid #39579b;
+
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&_g{
+		background-color:  #ce3f31;
+		border: 1px solid #ce3f31;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&_t{
+		background-color:  #1c9deb;
+		border: 1px solid #1c9deb;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&__icon {
+		color: white;
+		transition: 0.5s ease all;
+		&_facebook {
+					
+		}
+		&_google-plus {
+		}
+		&_twitter {
+		}
+	}
+}
+
+.foooter-social:hover .foooter-social__icon_facebook{
+	color: #39579b;
+}
+
+.foooter-social:hover .foooter-social__icon_google-plus{
+	color: #ce3f31;
+}
+
+.foooter-social:hover .foooter-social__icon_twitter{
+	color: #1c9deb;
+}
+
+
+
+
+} /* MDS3 */
+
+
+
+
+
+
+/* ========================== MDS4 ===============================   */
+
+@media (max-width:$md4+px){
+	.footer {
+	.container{
+		padding: 20px 10px 30px 10px;
+	}
+	&__about-block {}
+	&__menu-column {}
+}
+.container {
+}
+.footer-body {
+	display: flex;
+	flex-direction: column;
+}
+.footer-about {
+	max-width: none;
+	text-align: center;
+	margin: 0px 0px 40px 0px;
+	&__title {
+		margin: 0px 0px 10px 0px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 25px;
+		margin: 0px 0px 10px 0px;
+	}
+	&__icons {}
+}
+.footer__menu-wrapper{
+	flex: 0 1 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.footer-menu {
+	flex: 0 1 auto;
+	width: 50%;
+	margin: 0px 0px 20px 0px;
+	
+	
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		margin: 0px 0px 15px 0px;
+	}
+	&__list {
+		li{
+			margin: 0px 0px 11px 0px;
+		}
+	}
+	&__item {
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover{
+			color: #333;
+		}
+	}
+}
+
+.footer {
+	&__social-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+.foooter {
+	&__social-item {
+		margin: 0px 30px 0px 0px;
+	}
+}
+.foooter-social {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	transition: 0.5s ease all;
+
+	&_f{
+		background-color:  #39579b;
+		border: 1px solid #39579b;
+
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&_g{
+		background-color:  #ce3f31;
+		border: 1px solid #ce3f31;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&_t{
+		background-color:  #1c9deb;
+		border: 1px solid #1c9deb;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&__icon {
+		color: white;
+		transition: 0.5s ease all;
+		&_facebook {
+					
+		}
+		&_google-plus {
+		}
+		&_twitter {
+		}
+	}
+}
+
+.foooter-social:hover .foooter-social__icon_facebook{
+	color: #39579b;
+}
+
+.foooter-social:hover .foooter-social__icon_google-plus{
+	color: #ce3f31;
+}
+
+.foooter-social:hover .foooter-social__icon_twitter{
+	color: #1c9deb;
+}
+
+
+
+} /* MDS4 */

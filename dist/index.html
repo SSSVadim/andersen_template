@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+
+	<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/style.min.css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- <meta name="robots" content="noindex, nofollow" /> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+
+	<!-- ===========================HEADER==========================================  -->
+	<!-- ===========================================================================  -->
+	<div class="wrapper">
+		<header class="header">
+	<div class="vs-container">
+		<div class="header__body">
+
+			<a href="#" class="header__logo logo">
+				<img src="img/logo.png" alt="logo" />
+			</a>
+
+
+			<nav class="header-menu">
+				<ul class="header-menu__list">
+					<li><a href="#" class="header-menu__link">Favorites</a></li>
+					<li><a href="#" class="header-menu__link">Search History</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-account">
+				<button type="button" class="header-account__btn">Вход</button>
+				<div class="header-account__spleeter"></div>
+				<button type="button" class="header-account__btn">Регистрация</button>
+			</div>
+
+
+		</div>
+	</div>
+</header>
+
+
+		<!-- ==========================CONTENT==========================================  -->
+		<!-- ===========================================================================  -->
+		<main class="page">
+
+
+			<!-- info -->
+<!-- ============================== -->
+<section class="info section">
+	<div class="vs-container">
+		<div class="info-search">
+			<div class="info-searh__input-wrapper">
+				<input autocomplete="off" type="text" name="search" placeholder="Введите название" id="input_id"
+					class="info-searh_input" />
+				<button type="submit" class="btn">Искать</button>
+			</div>
+		</div>
+		<div class="info-header">
+			<h1 class="info__title title">Все категории</h1>
+			<div class="info-navigation">
+				<a href="#" class="info-navigation__link active">Все категории</a>
+				<a href="#" class="info-navigation__link">Актеры</a>
+				<a href="#" class="info-navigation__link">Эпизоды</a>
+				<a href="#" class="info-navigation__link">Пункт 4</a>
+				<a href="#" class="info-navigation__link">Пункт 5</a>
+			</div>
+		</div>
+
+		<ul class="info__card-container">
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/14.jpg" alt="">
+					</div>
+					<div class="card-item__content-wrapper">
+						<h3 class="card-item__title">
+							Название фильма длинное очень
+						</h3>
+						<p class="card-item__year">2020</p>
+					</div>
+					<!-- <div class="card-item__favorite-icon">
+						
+						<svg id="Capa_1" enable-background="new 0 0 512.07 512.07" height="512"
+							viewBox="0 0 512.07 512.07" width="512" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path
+									d="m509.759 194.639c-6.152-18.858-22.945-31.043-42.781-31.043h-127.918l-40.282-122.33c-6.192-18.805-22.95-30.926-42.729-30.926-.063 0-.128 0-.191.001-19.86.078-36.611 12.349-42.674 31.262l-39.108 121.993h-128.983c-19.886 0-36.692 12.226-42.814 31.146-6.123 18.92.335 38.674 16.453 50.324l104.361 75.434-40.17 121.991c-6.217 18.88.133 38.662 16.177 50.396 8.058 5.894 17.307 8.842 26.562 8.842 9.171-.001 18.347-2.897 26.365-8.693l104.542-75.563 103.3 75.436c16.026 11.704 36.781 11.76 52.873.147s22.575-31.328 16.518-50.227l-39.218-122.329 103.474-75.563c16.02-11.698 22.396-31.441 16.243-50.298z" />
+							</g>
+						</svg>
+					</div> -->
+					<div class="card-item__favorite-icon">
+						<!-- SVG -->
+						<svg id="Capa_1" enable-background="new 0 0 512.07 512.07" height="512"
+							viewBox="0 0 512.07 512.07" width="512" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path
+									d="m509.759 194.639c-6.152-18.858-22.945-31.043-42.781-31.043h-127.918l-40.282-122.33c-6.192-18.805-22.95-30.926-42.729-30.926-.063 0-.128 0-.191.001-19.86.078-36.611 12.349-42.674 31.262l-39.108 121.993h-128.983c-19.886 0-36.692 12.226-42.814 31.146-6.123 18.92.335 38.674 16.453 50.324l104.361 75.434-40.17 121.991c-6.217 18.88.133 38.662 16.177 50.396 8.058 5.894 17.307 8.842 26.562 8.842 9.171-.001 18.347-2.897 26.365-8.693l104.542-75.563 103.3 75.436c16.026 11.704 36.781 11.76 52.873.147s22.575-31.328 16.518-50.227l-39.218-122.329 103.474-75.563c16.02-11.698 22.396-31.441 16.243-50.298zm-33.935 26.07-120.959 88.332 45.825 142.946c3.085 9.621-3.435 15.247-5.506 16.742s-9.465 5.91-17.625-.05l-120.901-88.289-122.206 88.333c-8.201 5.927-15.576 1.461-17.642-.05-2.065-1.511-8.558-7.187-5.392-16.8l47.033-142.833-122.145-88.287c-8.206-5.932-6.272-14.34-5.484-16.775s4.146-10.382 14.271-10.382h150.87l45.79-142.835c3.087-9.629 11.668-10.41 14.225-10.421h.052c2.62 0 11.113.769 14.255 10.309l47.07 142.947h149.624c10.1 0 13.469 7.92 14.261 10.348s2.74 10.81-5.416 16.765z" />
+							</g>
+						</svg>
+
+
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/2.jpg" alt="">
+					</div>
+					<h3 class="card-item__title">
+						Заголовок
+					</h3>
+					<p class="card-item__year">2020</p>
+
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/3.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/4.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/5.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/6.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+		</ul>
+
+
+	</div>
+</section>
+<!-- END info -->
+			<!-- Card-info -->
+<!-- ============================== -->
+<section class="card-inner section">
+	<div class="vs-container">
+		<div class="card-inner__wrapper">
+			<div class="card-inner__img-wrapper">
+				<img src="img/testgallery/4.jpg" alt="#">
+			</div>
+			<div class="card-inner__content-wrapper">
+				<h2 class="card-inner__title">Заголовок</h2>
+				<p class="card-inner__year">Год</p>
+				<p class="card-inner__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam
+				<p class="card-inner__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic non distinctio
+					ipsa praesentium odit minima perspiciatis, culpa at ab quis, molestias incidunt dicta sequi.
+					Sapiente fugiat iusto repellendus ea, voluptate sint quisquam temporibus! Ut debitis minus enim,
+					odit ipsam ipsa, voluptate quaerat numquam non amet vero nesciunt, quidem earum perspiciatis iure
+					neque molestiae dolor quisquam cumque. Et assumenda voluptatem laborum nostrum fuga delectus iusto,
+					praesentium maxime repellat. Vitae qui quia officiis a! Inventore harum repudiandae error sit enim,
+					repellat aliquid.</p>
+			</div>
+		</div>
+
+
+	</div>
+</section>
+<!-- END Card-info -->
+			<!-- Authorize -->
+<!-- ============================== -->
+<section class="auth section">
+	<div class="vs-container">
+
+		<div class="auth__form">
+			<form action="#" method="POST" class="auth-form">
+				<div class="auth-form__title-wrapper">
+					<h2 class="auth-form__title">Войти в систему</h2>
+				</div>
+
+				<div class="auth__field-wrapper">
+					<div class="auth-form__field-wrapper">
+						<label for="auth-name-id" class="auth-form__label"> Введите логин</label>
+						<input autocomplete="off" type="text" name="auth-name" placeholder="Логин" id="auth-name-id"
+							class="auth-form__input input" />
+					</div>
+
+					<div class="auth-form__field-wrapper">
+						<label for="auth-pass-id" class="auth-form__label"> Введите пароль</label>
+						<input autocomplete="off" type="text" name="auth-pass" placeholder="Пароль" id="auth-pass-id"
+							class="auth-form__input input" />
+					</div>
+				</div>
+
+				<div class="section-form__buttons">
+					<button type="submit" class="btn">Войти</button>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+</section>
+<!-- END Authorize -->
+			<!-- registerorize -->
+<!-- ============================== -->
+<section class="register section">
+	<div class="vs-container">
+
+		<div class="register__form">
+			<form action="#" method="POST" class="register-form">
+				<div class="register-form__title-wrapper">
+					<h2 class="register-form__title">Регистрация</h2>
+				</div>
+
+				<div class="register__field-wrapper">
+					<div class="register-form__field-wrapper">
+						<label for="register-name-id" class="register-form__label"> Введите логин</label>
+						<input autocomplete="off" type="text" name="register-name" placeholder="Логин"
+							id="register-name-id" class="register-form__input input" />
+					</div>
+
+					<div class="register-form__field-wrapper">
+						<label for="register-pass-id" class="register-form__label"> Введите пароль</label>
+						<input autocomplete="off" type="text" name="register-pass" placeholder="Пароль"
+							id="register-pass-id" class="register-form__input input" />
+					</div>
+				</div>
+
+				<div class="section-form__buttons">
+					<button type="submit" class="btn">Зарегистрироваться</button>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+</section>
+<!-- END registerorize -->
+			<!-- Favorites -->
+<!-- ============================== -->
+<section class="favorites section">
+	<div class="vs-container">
+		<h2 class="favorites__title">Favorites</h2>
+
+		<ul class="info__card-container">
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/1.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/2.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/3.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/4.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/5.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/6.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+</section>
+<!-- END Favorites -->
+			<!-- Search-result -->
+<!-- ============================== -->
+<section class="search-result section">
+	<div class="vs-container">
+		<h2 class="search-result__title title">Search result:</h2>
+
+		<ul class="info__card-container">
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/1.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/2.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/3.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/4.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/5.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+			<li class="info__card-item-wrapper">
+				<a href="#" class="info__card-item card-item">
+					<div class="card-item__img">
+						<img src="img/testgallery/6.jpg" alt="">
+					</div>
+					<div class="card-item__title">
+						Заголовок
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- END Search-result -->
+			<!-- Search-history -->
+<!-- ============================== -->
+<section class="search-history section">
+	<div class="search-history vs-container">
+		<h2 class="search-history__title title">Search history</h2>
+		<ul class="search-history__list">
+			<li><a href="#" class="search-history__item">Запрос 1</a></li>
+			<li><a href="#" class="search-history__item">Запрос 1</a></li>
+			<li><a href="#" class="search-history__item">Запрос 1</a></li>
+			<li><a href="#" class="search-history__item">Запрос 1</a></li>
+			<li><a href="#" class="search-history__item">Запрос 1</a></li>
+
+		</ul>
+	</div>
+</section>
+<!-- END Search-history -->
+
+
+		</main>
+
+
+		<!-- =================================FOOTER====================================  -->
+		<!-- ===========================================================================  -->
+		<footer class="footer">
+	<div class="vs-container">
+		<div class="footer__body">
+			<a href="#" class="footer__logo logo">
+				<img src="img/logo.png" alt="logo" />
+			</a>
+			<div class="footer__copyright">
+				All right reserved © 2021
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+
+
+
+	<!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

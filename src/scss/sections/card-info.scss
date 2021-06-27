@@ -1,0 +1,36 @@
+.card-inner {
+  // .card-inner__wrapper
+  &__wrapper {
+    display: flex;
+  }
+  // .card-inner__img-wrapper
+  &__img-wrapper {
+    flex: 0 1 auto;
+    width: 32%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+  // .card-inner__content-wrapper
+  &__content-wrapper {
+    flex: 0 1 auto;
+    width: 68%;
+    padding: 0px 0px 0px 27px;
+  }
+  // .card-inner__title
+  &__title {
+    font-size: 26px;
+    margin: 0px 0px 10px 0px;
+  }
+  // .card-inner__year
+  &__year {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+  }
+  // .card-inner__desc
+  &__desc {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+  }
+}

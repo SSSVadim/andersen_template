@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+
+	@@include('html-parts/_head.html')
+</head>
+
+<body>
+
+
+
+	<!-- ===========================HEADER==========================================  -->
+	<!-- ===========================================================================  -->
+	<div class="wrapper">
+		@@include('html-parts/_header.html')
+
+
+		<!-- ==========================CONTENT==========================================  -->
+		<!-- ===========================================================================  -->
+		<main class="page">
+
+
+			@@include('html-parts/cards.html')
+			@@include('html-parts/card-info.html')
+			@@include('html-parts/auth.html')
+			@@include('html-parts/register.html')
+			@@include('html-parts/favorites.html')
+			@@include('html-parts/search-result.html')
+			@@include('html-parts/search-history.html')
+
+
+		</main>
+
+
+		<!-- =================================FOOTER====================================  -->
+		<!-- ===========================================================================  -->
+		@@include('html-parts/_footer.html')
+	</div>
+
+
+
+	@@include('html-parts/_js.html')
+
+</body>
+
+</html>

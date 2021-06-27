@@ -1,0 +1,153 @@
+.info {
+  // .info__title
+  &__title {
+  }
+  // .info__card-container
+  &__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  // .info__card-item-wrapper
+  &__card-item-wrapper {
+    flex: 0 0 auto;
+    width: 25%;
+    padding: 0 15px;
+    margin: 0px 0px 35px 0px;
+  }
+  // .info__card-item
+  &__card-item {
+  }
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0px 0px 30px 0px;
+}
+
+.info-navigation {
+  // .info-navigation__link
+  &__link {
+    font-size: 18px;
+    color: #e7e7e9;
+
+    margin: 0px 5px;
+
+    &.active {
+      position: relative;
+      color: #fff;
+      font-weight: bold;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 105%;
+        height: 2px;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        background-color: #026eda;
+      }
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.card-item {
+  display: block;
+  position: relative;
+  min-height: 250px;
+
+  &:hover {
+    .card-item__img {
+      &:after {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  // .card-item__img
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__content-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    text-align: center;
+  }
+  // .card-item__title
+  &__title {
+    font-size: 28px;
+    color: #ddd;
+    margin: 0px 0px 20px 0px;
+    font-weight: bold;
+    font-family: Roboto;
+  }
+
+  &__year {
+    font-size: 20px;
+    color: #ddd;
+  }
+  &__favorite-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    fill: rgb(189, 21, 21);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.info-searh {
+  // .info-searh_input
+  &_input {
+    width: 100%;
+    border-radius: 5px;
+    height: 28px;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 20px;
+    font-size: 18px;
+  }
+  // .info-searh__input-wrapper
+  &__input-wrapper {
+  }
+}

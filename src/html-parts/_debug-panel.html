@@ -1,0 +1,185 @@
+
+<div class="debug-panel">
+	<div class="debug-panel-scroll debug-panel-item">
+		<img src="img/icons/grid/vs-scroll-bar.svg" alt="" />
+	</div>
+	<div class="debug-panel-screen debug-panel-item">
+		<img src="img/icons/grid/vs-screen.svg" alt="" />
+	</div>
+	<div class="debug-panel-grid debug-panel-item">
+		<img src="img/icons/grid/vs-columns.svg" alt="" />
+	</div>
+</div>
+
+
+
+<div class="debug-info-panel">
+	
+	<div class="debug-scroll">
+		<div class="debug-scroll__top">
+			Scroll top:
+			<span class="debug-scroll__top-value"></span>
+			px
+		</div>
+		<div class="debug-scroll__bottom">
+			Scroll bottom:
+			<span class="debug-scroll__bottom-value"></span>
+			px
+		</div>
+	</div>
+	
+	<div class="debug-screen">
+		<div class="debug-screen__width">
+			Screen width:
+			<span class="debug-screen__width-value"></span>
+			px
+		</div>
+		<div class="debug-screen__media">
+			Media:
+			<span class="debug-screen__media-value"></span>
+		</div>
+		<div class="debug-screen__container">
+			Container:
+			<span class="debug-screen__container-value"></span>	
+			<span class="debug-screen__container-border">
+				<img src="img/icons/grid/vs-corners.svg" alt="" />
+			</span>	
+		</div>	
+	</div>
+
+</div>
+
+
+
+<div class="debug-grid">
+	<div class="vs-container">
+		<div class="debug-grid__row">
+			<div class="debug-grid__col debug-grid__col_mobile"></div>
+			<div class="debug-grid__col debug-grid__col_mobile"></div>
+			<div class="debug-grid__col debug-grid__col_mobile"></div>
+			<div class="debug-grid__col debug-grid__col_mobile"></div>
+			<div class="debug-grid__col"></div>
+			<div class="debug-grid__col"></div>
+			<div class="debug-grid__col"></div>
+			<div class="debug-grid__col"></div>
+			<div class="debug-grid__col"></div>
+			<div class="debug-grid__col"></div>
+			<div class="debug-grid__col"></div>
+			<div class="debug-grid__col"></div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function(event) { 
+	
+	/* Icons */
+	let debug_scroll_ico = document.querySelector('.debug-panel-scroll');
+	let debug_screen_ico = document.querySelector('.debug-panel-screen');
+	let debug_grid_ico = document.querySelector('.debug-panel-grid');		
+	let debug_border_ico = document.querySelector('.debug-screen__container-border');
+
+	/* Panels */
+	let debug_info_wrapper = document.querySelector('.debug-info-panel');
+	let debug_scroll = document.querySelector('.debug-scroll');
+	let debug_screen = document.querySelector('.debug-screen');
+	let debug_grid = document.querySelector('.debug-grid');
+
+
+
+	/*Containers*/
+	let all_containers = document.querySelectorAll('.vs-container');
+
+
+	
+	debug_scroll_ico.addEventListener("click", function(){
+		this.classList.toggle('vs-active');
+		debug_scroll.classList.toggle('vs-active');		
+	});
+	
+
+	debug_screen_ico.addEventListener("click", function(){
+		this.classList.toggle('vs-active');
+		debug_screen.classList.toggle('vs-active');
+	});
+
+	debug_grid_ico.addEventListener("click", function(){
+		this.classList.toggle('vs-active');
+		debug_grid.classList.toggle('vs-active');
+	});
+
+	debug_border_ico.addEventListener("click", function(){
+		this.classList.toggle('vs-active');
+		for (let i = 0; i < all_containers.length; i++){
+			all_containers[i].classList.toggle('vs-border');
+		}
+	});
+
+
+	window.addEventListener('resize', function(event){
+		debug_width_value.textContent = window.innerWidth;
+	});		
+
+
+	//====================================================================
+	//SCROLL
+
+	let scrollTop_debug;
+	let documentHeight_debug;
+	let scrollBottom_debug;
+	let isEndDocument_debug;
+	let prevScroll_debug = Math.round(window.pageYOffset || document.documentElement.scrollTop);
+
+	//Инициализация и сохранение значений в переменные
+	function initScrollProp_debug(){
+		scrollTop_debug = Math.round(window.pageYOffset || document.documentElement.scrollTop);
+		documentHeight_debug = Math.max(
+			document.body.scrollHeight, document.documentElement.scrollHeight,
+			document.body.offsetHeight, document.documentElement.offsetHeight,
+			document.body.clientHeight, document.documentElement.clientHeight
+		);
+		scrollBottom_debug = documentHeight_debug - scrollTop_debug - document.documentElement.clientHeight;
+		// if (scrollBottom_debug === 0){
+		// 	isEndDocument_debug = true;
+		// } else {
+		// 	isEndDocument_debug = false;
+		// }
+	}
+
+	//Вывод в консоль значений при скролле
+	function checkScrollProp_debug(){
+		console.log( "Прокручено сверху: " + scrollTop_debug );
+		//console.log( "Высота документа: " + documentHeight_debug );
+		console.log( "Прокручено снизу: " + scrollBottom_debug );
+		//console.log( "Документ долистан до конца: " + isEndDocument_debug );
+	}
+
+
+	initScrollProp_debug();
+	//checkScrollProp_debug();
+	window.addEventListener('scroll', function(){
+		initScrollProp_debug();
+		//checkScrollProp_debug();
+		debug_scroll_top_value.textContent = scrollTop_debug;
+		debug_scroll_bottom_value.textContent = scrollBottom_debug;
+	})
+	
+
+
+
+	/*Values*/
+	let debug_width_value = document.querySelector('.debug-screen__width-value');
+	debug_width_value.textContent = window.innerWidth;
+
+	let debug_scroll_top_value = document.querySelector('.debug-scroll__top-value');
+	debug_scroll_top_value.textContent = scrollTop_debug;
+	let debug_scroll_bottom_value = document.querySelector('.debug-scroll__bottom-value')
+	debug_scroll_bottom_value.textContent = scrollBottom_debug;
+
+	//====================================================================
+
+
+
+	});
+</script>
